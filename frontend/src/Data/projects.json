@@ -1,0 +1,26 @@
+[
+    {
+      "title": "To-do List Applicatiom",
+      "imageSrc": "project/project.png",
+      "description": "This is a project made to learn the latest languages by building an app.",
+      "skills": ["React", "CSS", "Node"],
+      "demo": "https://todolisteicarg.netlify.app/",
+      "source": "https://github.com/gragra-kj/Todoist"
+    },
+    {
+      "title": "Nike Applicatiom",
+      "imageSrc": "project/project.png",
+      "description": "This is a project is about a Nike website.",
+      "skills": ["React", "CSS", "Node", "TailWind"],
+      "demo": "https://nikeyappp.netlify.app/",
+      "source": "https://github.com/gragra-kj/nike"
+    },
+    {
+      "title": "Project C",
+      "imageSrc": "project/project.png",
+      "description": "This is a project made to learn the latest languages by building an app.",
+      "skills": ["React", "Express", "Node"],
+      "demo": "https://www.example.com",
+      "source": "https://www.github.com"
+    }
+  ]
