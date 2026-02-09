@@ -9,7 +9,7 @@ class Skill(models.Model):
         return self.name
     
 class Project(models.Model):
-    title=models.models.CharField(max_length=500)
+    title=models.CharField(max_length=500)
     description=models.TextField()
     tech=models.CharField(max_length=250)
     github_urs=models.URLField()
