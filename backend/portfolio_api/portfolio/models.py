@@ -2,8 +2,42 @@ from django.db import models
 # Create your models here.
 
 class Skill(models.Model):
-    name=models.CharField(max_length=100)
-    level=models.CharField(max_length=20)
+    
+    BEGINNER = "Beginner"
+    INTERMEDIATE = "Intermediate"
+    ADVANCED = "Advanced"
+
+    LEVEL_CHOICES = [
+        (BEGINNER, "Beginner"),
+        (INTERMEDIATE, "Intermediate"),
+        (ADVANCED, "Advanced"),
+    ]
+
+    # ---- CATEGORY CHOICES ----
+    AWS = "AWS"
+    BACKEND = "Backend"
+    FRONTEND = "Frontend"
+    IT_SUPPORT = "IT Support"
+
+    CATEGORY_CHOICES = [
+        (AWS, "AWS"),
+        (BACKEND, "Backend"),
+        (FRONTEND, "Frontend"),
+        (IT_SUPPORT, "IT Support"),
+    ]
+
+    name = models.CharField(max_length=100)
+    category = models.CharField(
+        max_length=20,
+        choices=CATEGORY_CHOICES,
+        default=AWS,
+    )
+    level = models.CharField(
+        max_length=20,
+        choices=LEVEL_CHOICES,
+        default=BEGINNER,
+    )
+
     
     def __str__(self):
         return self.name
