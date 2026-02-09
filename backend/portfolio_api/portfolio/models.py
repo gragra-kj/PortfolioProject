@@ -19,4 +19,13 @@ class Project(models.Model):
     def __str__(self):
         return self.title
     
+class Experience(models.Model):
+    role=models.CharField(max_length=500)
+    company=models.CharField(max_length=500)
+    start_date=models.CharField(max_length=200)
+    end_date=models.CharField()
+    description=models.TextField()
     
+    def __str__(self):
+        return f"{self.role} at {self.company}"
+        
